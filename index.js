@@ -15,13 +15,11 @@ function getResult() {
    if (firstExeption === secondExeption) {
       secondExeption = getRandomNumber();
    }
-   let result = [];
-   mainData.map(elem => {
+   const res = mainData.map(elem => {
       if (elem.id !== firstExeption && elem.id !== secondExeption) {
-         result.push(`${elem.name}${elem.username}`)
+         return `${elem.name}${elem.username}`
       }
-   })
-   console.log(result);
-   wrapperOfResult.innerHTML =result.join(', ');
-   return result;
+   }).filter(x => x)
+   wrapperOfResult.innerHTML =res.join(', ');
+   return res;
 }
