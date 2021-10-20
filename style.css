@@ -1,0 +1,35 @@
+body {
+ position: relative;
+}
+.all-alone {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   background-image: linear-gradient(to right bottom, #ece909, hsl(44, 93%, 48%));
+   background-color: rgb(238, 186, 17);
+   border-radius: 10px;
+   box-shadow: 0 0 5px 2px grey;
+}
+
+.all-alone::before {
+   content: "";
+   position: absolute;
+   background-color: black;
+   width: 50%;
+   height: 50%;
+   left: 50%;
+   top: 50%;
+   border-radius: 0 0 10px 0;
+   z-index: 2;
+}
+
+.all-alone::after {
+   content: "";
+   position: absolute;
+   background-color: white;
+   width: 50%;
+   height: 50%;
+   top: 50%;
+   border-radius: 0 0 0 10px;
+   z-index: 2;
+}
