@@ -7,7 +7,7 @@ body {
    height: 200px;
    background-image: linear-gradient(to right bottom, #ece909, hsl(44, 93%, 48%));
    background-color: rgb(238, 186, 17);
-   border-radius: 10px;
+   border-radius: 15px;
    box-shadow: 0 0 5px 2px grey;
 }
 
@@ -19,7 +19,7 @@ body {
    height: 50%;
    left: 50%;
    top: 50%;
-   border-radius: 0 0 10px 0;
+   border-radius: 0 0 15px 0;
    z-index: 2;
 }
 
@@ -30,6 +30,11 @@ body {
    width: 50%;
    height: 50%;
    top: 50%;
-   border-radius: 0 0 0 10px;
+   border-radius: 0 0 0 15px;
    z-index: 2;
+}
+
+.hover__test:hover {
+   text-decoration: underline;
+
 }
